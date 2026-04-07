@@ -1,0 +1,43 @@
+cat > .gitignore << 'EOF'
+# Terraform
+**/.terraform/
+**/.terraform.lock.hcl
+*.tfstate
+*.tfstate.*
+*.tfplan
+crash.log
+crash.*.log
+override.tf
+override.tf.json
+*_override.tf
+*_override.tf.json
+.terraformrc
+terraform.rc
+
+# Terraform variables (sensitive)
+*.auto.tfvars
+*.override.tfvars
+terraform.tfvars
+*.tfvars.json
+
+# AWS Data Engineering / Glue
+__pycache__/
+*.pyc
+.pytest_cache/
+.coverage
+htmlcov/
+data/raw/
+data/curated/
+*.parquet
+*.csv.tmp
+
+# IDE / Editor
+.vscode/settings.json
+.idea/
+*.swp
+*.swo
+
+# OS
+.DS_Store
+Thumbs.db
+EOF
