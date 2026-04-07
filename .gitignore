@@ -4,6 +4,7 @@ cat > .gitignore << 'EOF'
 **/.terraform.lock.hcl
 *.tfstate
 *.tfstate.*
+*.tfstate.backup
 *.tfplan
 crash.log
 crash.*.log
@@ -18,26 +19,56 @@ terraform.rc
 *.auto.tfvars
 *.override.tfvars
 terraform.tfvars
+*.tfvars
 *.tfvars.json
 
-# AWS Data Engineering / Glue
+# AWS Data Engineering / Glue (EXCLUDE large formats, KEEP CSV)
 __pycache__/
 *.pyc
+*.pyo
 .pytest_cache/
 .coverage
 htmlcov/
-data/raw/
-data/curated/
-*.parquet
-*.csv.tmp
+**/checkpoints/
+**/spark-history/
+**/*.parquet          # BLOCK large parquet
+**/*.avro             # BLOCK large avro  
+**/*.orc              # BLOCK large orc
+**/*.csv.gz           # BLOCK compressed CSV
+data/raw/large/       # BLOCK only large subfolder
+glue_job_*.zip
+spark-warehouse/
+
+# AWS Credentials/Logs
+.aws/
+*.log.*
+aws_*.json
+export_*.json
+
+# Python Virtual Environment
+venv/
+env/
+.venv/
 
 # IDE / Editor
 .vscode/settings.json
+.vscode/launch.json
 .idea/
 *.swp
 *.swo
+*.sublime-project
 
-# OS
+# OS Generated
 .DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
 Thumbs.db
+
+# Docker
+Dockerfile.*
+.dockerignore
+
 EOF
