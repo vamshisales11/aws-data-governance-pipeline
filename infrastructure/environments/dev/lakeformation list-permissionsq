@@ -1,0 +1,1131 @@
+{
+    "PrincipalResourcePermissions": [
+        {
+            "Principal": {
+                "DataLakePrincipalIdentifier": "arn:aws:iam::519697923626:user/data_engineer"
+            },
+            "Resource": {
+                "Database": {
+                    "CatalogId": "519697923626",
+                    "Name": "default"
+                }
+            },
+            "Permissions": [
+                "ALL",
+                "ALTER",
+                "CREATE_TABLE",
+                "DESCRIBE",
+                "DROP"
+            ],
+            "PermissionsWithGrantOption": [
+                "ALL",
+                "ALTER",
+                "CREATE_TABLE",
+                "DESCRIBE",
+                "DROP"
+            ],
+            "LastUpdated": "2026-04-05T20:20:16.074000-04:00",
+            "LastUpdatedBy": "arn:aws:iam::519697923626:user/data_engineer"
+        },
+        {
+            "Principal": {
+                "DataLakePrincipalIdentifier": "arn:aws:iam::519697923626:user/data_engineer"
+            },
+            "Resource": {
+                "Database": {
+                    "CatalogId": "519697923626",
+                    "Name": "datagov_raw_db"
+                }
+            },
+            "Permissions": [
+                "ALL",
+                "ALTER",
+                "CREATE_TABLE",
+                "DESCRIBE",
+                "DROP"
+            ],
+            "PermissionsWithGrantOption": [
+                "ALL",
+                "ALTER",
+                "CREATE_TABLE",
+                "DESCRIBE",
+                "DROP"
+            ],
+            "LastUpdated": "2026-04-05T19:45:24.820000-04:00",
+            "LastUpdatedBy": "arn:aws:iam::519697923626:user/data_engineer"
+        },
+        {
+            "Principal": {
+                "DataLakePrincipalIdentifier": "arn:aws:iam::519697923626:role/datagov-dev-data-engineer-role"
+            },
+            "Resource": {
+                "Database": {
+                    "CatalogId": "519697923626",
+                    "Name": "datagov_raw_db"
+                }
+            },
+            "Permissions": [
+                "ALL"
+            ],
+            "PermissionsWithGrantOption": [],
+            "LastUpdated": "2026-04-07T01:42:24.092000-04:00",
+            "LastUpdatedBy": "arn:aws:iam::519697923626:user/data_engineer"
+        },
+        {
+            "Principal": {
+                "DataLakePrincipalIdentifier": "arn:aws:iam::519697923626:user/data_engineer"
+            },
+            "Resource": {
+                "Database": {
+                    "CatalogId": "519697923626",
+                    "Name": "datagov_curated_db"
+                }
+            },
+            "Permissions": [
+                "ALL",
+                "ALTER",
+                "CREATE_TABLE",
+                "DESCRIBE",
+                "DROP"
+            ],
+            "PermissionsWithGrantOption": [
+                "ALL",
+                "ALTER",
+                "CREATE_TABLE",
+                "DESCRIBE",
+                "DROP"
+            ],
+            "LastUpdated": "2026-04-05T19:45:24.817000-04:00",
+            "LastUpdatedBy": "arn:aws:iam::519697923626:user/data_engineer"
+        },
+        {
+            "Principal": {
+                "DataLakePrincipalIdentifier": "arn:aws:iam::519697923626:role/datagov-dev-data-analyst-role"
+            },
+            "Resource": {
+                "Database": {
+                    "CatalogId": "519697923626",
+                    "Name": "datagov_curated_db"
+                }
+            },
+            "Permissions": [
+                "DESCRIBE"
+            ],
+            "PermissionsWithGrantOption": [],
+            "LastUpdated": "2026-04-07T01:43:01.759000-04:00",
+            "LastUpdatedBy": "arn:aws:iam::519697923626:user/data_engineer"
+        },
+        {
+            "Principal": {
+                "DataLakePrincipalIdentifier": "arn:aws:iam::519697923626:role/datagov-dev-data-engineer-role"
+            },
+            "Resource": {
+                "Database": {
+                    "CatalogId": "519697923626",
+                    "Name": "datagov_curated_db"
+                }
+            },
+            "Permissions": [
+                "ALL"
+            ],
+            "PermissionsWithGrantOption": [],
+            "LastUpdated": "2026-04-07T01:42:53.765000-04:00",
+            "LastUpdatedBy": "arn:aws:iam::519697923626:user/data_engineer"
+        },
+        {
+            "Principal": {
+                "DataLakePrincipalIdentifier": "arn:aws:iam::519697923626:user/data_engineer"
+            },
+            "Resource": {
+                "Database": {
+                    "CatalogId": "519697923626",
+                    "Name": "datagov_processed_db"
+                }
+            },
+            "Permissions": [
+                "ALL",
+                "ALTER",
+                "CREATE_TABLE",
+                "DESCRIBE",
+                "DROP"
+            ],
+            "PermissionsWithGrantOption": [
+                "ALL",
+                "ALTER",
+                "CREATE_TABLE",
+                "DESCRIBE",
+                "DROP"
+            ],
+            "LastUpdated": "2026-04-05T19:45:24.814000-04:00",
+            "LastUpdatedBy": "arn:aws:iam::519697923626:user/data_engineer"
+        },
+        {
+            "Principal": {
+                "DataLakePrincipalIdentifier": "arn:aws:iam::519697923626:role/datagov-dev-data-engineer-role"
+            },
+            "Resource": {
+                "Database": {
+                    "CatalogId": "519697923626",
+                    "Name": "datagov_processed_db"
+                }
+            },
+            "Permissions": [
+                "ALL"
+            ],
+            "PermissionsWithGrantOption": [],
+            "LastUpdated": "2026-04-07T01:42:32.618000-04:00",
+            "LastUpdatedBy": "arn:aws:iam::519697923626:user/data_engineer"
+        },
+        {
+            "Principal": {
+                "DataLakePrincipalIdentifier": "arn:aws:iam::519697923626:user/data_engineer"
+            },
+            "Resource": {
+                "Table": {
+                    "CatalogId": "519697923626",
+                    "DatabaseName": "datagov_raw_db",
+                    "Name": "products"
+                }
+            },
+            "Permissions": [
+                "ALL",
+                "ALTER",
+                "DELETE",
+                "DESCRIBE",
+                "DROP",
+                "INSERT"
+            ],
+            "PermissionsWithGrantOption": [
+                "ALL",
+                "ALTER",
+                "DELETE",
+                "DESCRIBE",
+                "DROP",
+                "INSERT"
+            ],
+            "LastUpdated": "2026-04-06T00:54:42.994000-04:00",
+            "LastUpdatedBy": "arn:aws:iam::519697923626:user/data_engineer"
+        },
+        {
+            "Principal": {
+                "DataLakePrincipalIdentifier": "arn:aws:iam::519697923626:user/data_engineer"
+            },
+            "Resource": {
+                "TableWithColumns": {
+                    "CatalogId": "519697923626",
+                    "DatabaseName": "datagov_raw_db",
+                    "Name": "products",
+                    "ColumnWildcard": {}
+                }
+            },
+            "Permissions": [
+                "SELECT"
+            ],
+            "PermissionsWithGrantOption": [
+                "SELECT"
+            ],
+            "LastUpdated": "2026-04-06T00:54:42.994000-04:00",
+            "LastUpdatedBy": "arn:aws:iam::519697923626:user/data_engineer"
+        },
+        {
+            "Principal": {
+                "DataLakePrincipalIdentifier": "arn:aws:iam::519697923626:user/data_engineer"
+            },
+            "Resource": {
+                "Table": {
+                    "CatalogId": "519697923626",
+                    "DatabaseName": "datagov_raw_db",
+                    "Name": "payments"
+                }
+            },
+            "Permissions": [
+                "ALL",
+                "ALTER",
+                "DELETE",
+                "DESCRIBE",
+                "DROP",
+                "INSERT"
+            ],
+            "PermissionsWithGrantOption": [
+                "ALL",
+                "ALTER",
+                "DELETE",
+                "DESCRIBE",
+                "DROP",
+                "INSERT"
+            ],
+            "LastUpdated": "2026-04-06T00:54:42.979000-04:00",
+            "LastUpdatedBy": "arn:aws:iam::519697923626:user/data_engineer"
+        },
+        {
+            "Principal": {
+                "DataLakePrincipalIdentifier": "arn:aws:iam::519697923626:user/data_engineer"
+            },
+            "Resource": {
+                "TableWithColumns": {
+                    "CatalogId": "519697923626",
+                    "DatabaseName": "datagov_raw_db",
+                    "Name": "payments",
+                    "ColumnWildcard": {}
+                }
+            },
+            "Permissions": [
+                "SELECT"
+            ],
+            "PermissionsWithGrantOption": [
+                "SELECT"
+            ],
+            "LastUpdated": "2026-04-06T00:54:42.979000-04:00",
+            "LastUpdatedBy": "arn:aws:iam::519697923626:user/data_engineer"
+        },
+        {
+            "Principal": {
+                "DataLakePrincipalIdentifier": "arn:aws:iam::519697923626:user/data_engineer"
+            },
+            "Resource": {
+                "Table": {
+                    "CatalogId": "519697923626",
+                    "DatabaseName": "datagov_raw_db",
+                    "Name": "customers"
+                }
+            },
+            "Permissions": [
+                "ALL",
+                "ALTER",
+                "DELETE",
+                "DESCRIBE",
+                "DROP",
+                "INSERT"
+            ],
+            "PermissionsWithGrantOption": [
+                "ALL",
+                "ALTER",
+                "DELETE",
+                "DESCRIBE",
+                "DROP",
+                "INSERT"
+            ],
+            "LastUpdated": "2026-04-06T01:05:50.869000-04:00",
+            "LastUpdatedBy": "arn:aws:iam::519697923626:user/data_engineer"
+        },
+        {
+            "Principal": {
+                "DataLakePrincipalIdentifier": "arn:aws:iam::519697923626:user/data_engineer"
+            },
+            "Resource": {
+                "TableWithColumns": {
+                    "CatalogId": "519697923626",
+                    "DatabaseName": "datagov_raw_db",
+                    "Name": "customers",
+                    "ColumnWildcard": {}
+                }
+            },
+            "Permissions": [
+                "SELECT"
+            ],
+            "PermissionsWithGrantOption": [
+                "SELECT"
+            ],
+            "LastUpdated": "2026-04-06T01:05:50.869000-04:00",
+            "LastUpdatedBy": "arn:aws:iam::519697923626:user/data_engineer"
+        },
+        {
+            "Principal": {
+                "DataLakePrincipalIdentifier": "arn:aws:iam::519697923626:user/data_engineer"
+            },
+            "Resource": {
+                "Table": {
+                    "CatalogId": "519697923626",
+                    "DatabaseName": "datagov_raw_db",
+                    "Name": "order_items"
+                }
+            },
+            "Permissions": [
+                "ALL",
+                "ALTER",
+                "DELETE",
+                "DESCRIBE",
+                "DROP",
+                "INSERT"
+            ],
+            "PermissionsWithGrantOption": [
+                "ALL",
+                "ALTER",
+                "DELETE",
+                "DESCRIBE",
+                "DROP",
+                "INSERT"
+            ],
+            "LastUpdated": "2026-04-06T00:54:42.984000-04:00",
+            "LastUpdatedBy": "arn:aws:iam::519697923626:user/data_engineer"
+        },
+        {
+            "Principal": {
+                "DataLakePrincipalIdentifier": "arn:aws:iam::519697923626:user/data_engineer"
+            },
+            "Resource": {
+                "TableWithColumns": {
+                    "CatalogId": "519697923626",
+                    "DatabaseName": "datagov_raw_db",
+                    "Name": "order_items",
+                    "ColumnWildcard": {}
+                }
+            },
+            "Permissions": [
+                "SELECT"
+            ],
+            "PermissionsWithGrantOption": [
+                "SELECT"
+            ],
+            "LastUpdated": "2026-04-06T00:54:42.984000-04:00",
+            "LastUpdatedBy": "arn:aws:iam::519697923626:user/data_engineer"
+        },
+        {
+            "Principal": {
+                "DataLakePrincipalIdentifier": "arn:aws:iam::519697923626:user/data_engineer"
+            },
+            "Resource": {
+                "Table": {
+                    "CatalogId": "519697923626",
+                    "DatabaseName": "datagov_raw_db",
+                    "Name": "orders"
+                }
+            },
+            "Permissions": [
+                "ALL",
+                "ALTER",
+                "DELETE",
+                "DESCRIBE",
+                "DROP",
+                "INSERT"
+            ],
+            "PermissionsWithGrantOption": [
+                "ALL",
+                "ALTER",
+                "DELETE",
+                "DESCRIBE",
+                "DROP",
+                "INSERT"
+            ],
+            "LastUpdated": "2026-04-06T00:54:43.026000-04:00",
+            "LastUpdatedBy": "arn:aws:iam::519697923626:user/data_engineer"
+        },
+        {
+            "Principal": {
+                "DataLakePrincipalIdentifier": "arn:aws:iam::519697923626:user/data_engineer"
+            },
+            "Resource": {
+                "TableWithColumns": {
+                    "CatalogId": "519697923626",
+                    "DatabaseName": "datagov_raw_db",
+                    "Name": "orders",
+                    "ColumnWildcard": {}
+                }
+            },
+            "Permissions": [
+                "SELECT"
+            ],
+            "PermissionsWithGrantOption": [
+                "SELECT"
+            ],
+            "LastUpdated": "2026-04-06T00:54:43.026000-04:00",
+            "LastUpdatedBy": "arn:aws:iam::519697923626:user/data_engineer"
+        },
+        {
+            "Principal": {
+                "DataLakePrincipalIdentifier": "arn:aws:iam::519697923626:user/data_engineer"
+            },
+            "Resource": {
+                "Table": {
+                    "CatalogId": "519697923626",
+                    "DatabaseName": "datagov_curated_db",
+                    "Name": "order_details_enriched"
+                }
+            },
+            "Permissions": [
+                "ALL",
+                "ALTER",
+                "DELETE",
+                "DESCRIBE",
+                "DROP",
+                "INSERT"
+            ],
+            "PermissionsWithGrantOption": [
+                "ALL",
+                "ALTER",
+                "DELETE",
+                "DESCRIBE",
+                "DROP",
+                "INSERT"
+            ],
+            "LastUpdated": "2026-04-06T21:37:45.385000-04:00",
+            "LastUpdatedBy": "arn:aws:iam::519697923626:user/data_engineer"
+        },
+        {
+            "Principal": {
+                "DataLakePrincipalIdentifier": "arn:aws:iam::519697923626:user/data_engineer"
+            },
+            "Resource": {
+                "TableWithColumns": {
+                    "CatalogId": "519697923626",
+                    "DatabaseName": "datagov_curated_db",
+                    "Name": "order_details_enriched",
+                    "ColumnWildcard": {}
+                }
+            },
+            "Permissions": [
+                "SELECT"
+            ],
+            "PermissionsWithGrantOption": [
+                "SELECT"
+            ],
+            "LastUpdated": "2026-04-06T21:37:45.385000-04:00",
+            "LastUpdatedBy": "arn:aws:iam::519697923626:user/data_engineer"
+        },
+        {
+            "Principal": {
+                "DataLakePrincipalIdentifier": "arn:aws:iam::519697923626:user/data_engineer"
+            },
+            "Resource": {
+                "Table": {
+                    "CatalogId": "519697923626",
+                    "DatabaseName": "datagov_curated_db",
+                    "Name": "customer_orders_summary"
+                }
+            },
+            "Permissions": [
+                "ALL",
+                "ALTER",
+                "DELETE",
+                "DESCRIBE",
+                "DROP",
+                "INSERT"
+            ],
+            "PermissionsWithGrantOption": [
+                "ALL",
+                "ALTER",
+                "DELETE",
+                "DESCRIBE",
+                "DROP",
+                "INSERT"
+            ],
+            "LastUpdated": "2026-04-06T21:37:45.376000-04:00",
+            "LastUpdatedBy": "arn:aws:iam::519697923626:user/data_engineer"
+        },
+        {
+            "Principal": {
+                "DataLakePrincipalIdentifier": "arn:aws:iam::519697923626:user/data_engineer"
+            },
+            "Resource": {
+                "TableWithColumns": {
+                    "CatalogId": "519697923626",
+                    "DatabaseName": "datagov_curated_db",
+                    "Name": "customer_orders_summary",
+                    "ColumnWildcard": {}
+                }
+            },
+            "Permissions": [
+                "SELECT"
+            ],
+            "PermissionsWithGrantOption": [
+                "SELECT"
+            ],
+            "LastUpdated": "2026-04-06T21:37:45.376000-04:00",
+            "LastUpdatedBy": "arn:aws:iam::519697923626:user/data_engineer"
+        },
+        {
+            "Principal": {
+                "DataLakePrincipalIdentifier": "arn:aws:iam::519697923626:role/datagov-dev-data-analyst-role"
+            },
+            "Resource": {
+                "TableWithColumns": {
+                    "CatalogId": "519697923626",
+                    "DatabaseName": "datagov_curated_db",
+                    "Name": "ALL_TABLES",
+                    "ColumnWildcard": {}
+                }
+            },
+            "Permissions": [
+                "SELECT"
+            ],
+            "PermissionsWithGrantOption": [],
+            "LastUpdated": "2026-04-07T01:43:22.601000-04:00",
+            "LastUpdatedBy": "arn:aws:iam::519697923626:user/data_engineer"
+        },
+        {
+            "Principal": {
+                "DataLakePrincipalIdentifier": "arn:aws:iam::519697923626:user/data_engineer"
+            },
+            "Resource": {
+                "Table": {
+                    "CatalogId": "519697923626",
+                    "DatabaseName": "datagov_curated_db",
+                    "Name": "sales_metrics"
+                }
+            },
+            "Permissions": [
+                "ALL",
+                "ALTER",
+                "DELETE",
+                "DESCRIBE",
+                "DROP",
+                "INSERT"
+            ],
+            "PermissionsWithGrantOption": [
+                "ALL",
+                "ALTER",
+                "DELETE",
+                "DESCRIBE",
+                "DROP",
+                "INSERT"
+            ],
+            "LastUpdated": "2026-04-06T21:37:45.389000-04:00",
+            "LastUpdatedBy": "arn:aws:iam::519697923626:user/data_engineer"
+        },
+        {
+            "Principal": {
+                "DataLakePrincipalIdentifier": "arn:aws:iam::519697923626:user/data_engineer"
+            },
+            "Resource": {
+                "TableWithColumns": {
+                    "CatalogId": "519697923626",
+                    "DatabaseName": "datagov_curated_db",
+                    "Name": "sales_metrics",
+                    "ColumnWildcard": {}
+                }
+            },
+            "Permissions": [
+                "SELECT"
+            ],
+            "PermissionsWithGrantOption": [
+                "SELECT"
+            ],
+            "LastUpdated": "2026-04-06T21:37:45.389000-04:00",
+            "LastUpdatedBy": "arn:aws:iam::519697923626:user/data_engineer"
+        },
+        {
+            "Principal": {
+                "DataLakePrincipalIdentifier": "arn:aws:iam::519697923626:user/data_engineer"
+            },
+            "Resource": {
+                "Table": {
+                    "CatalogId": "519697923626",
+                    "DatabaseName": "datagov_processed_db",
+                    "Name": "customers"
+                }
+            },
+            "Permissions": [
+                "ALL",
+                "ALTER",
+                "DELETE",
+                "DESCRIBE",
+                "DROP",
+                "INSERT"
+            ],
+            "PermissionsWithGrantOption": [
+                "ALL",
+                "ALTER",
+                "DELETE",
+                "DESCRIBE",
+                "DROP",
+                "INSERT"
+            ],
+            "LastUpdated": "2026-04-06T21:37:45.409000-04:00",
+            "LastUpdatedBy": "arn:aws:iam::519697923626:user/data_engineer"
+        },
+        {
+            "Principal": {
+                "DataLakePrincipalIdentifier": "arn:aws:iam::519697923626:user/data_engineer"
+            },
+            "Resource": {
+                "TableWithColumns": {
+                    "CatalogId": "519697923626",
+                    "DatabaseName": "datagov_processed_db",
+                    "Name": "customers",
+                    "ColumnWildcard": {}
+                }
+            },
+            "Permissions": [
+                "SELECT"
+            ],
+            "PermissionsWithGrantOption": [
+                "SELECT"
+            ],
+            "LastUpdated": "2026-04-06T21:37:45.409000-04:00",
+            "LastUpdatedBy": "arn:aws:iam::519697923626:user/data_engineer"
+        },
+        {
+            "Principal": {
+                "DataLakePrincipalIdentifier": "arn:aws:iam::519697923626:user/data_engineer"
+            },
+            "Resource": {
+                "Table": {
+                    "CatalogId": "519697923626",
+                    "DatabaseName": "datagov_processed_db",
+                    "Name": "orders"
+                }
+            },
+            "Permissions": [
+                "ALL",
+                "ALTER",
+                "DELETE",
+                "DESCRIBE",
+                "DROP",
+                "INSERT"
+            ],
+            "PermissionsWithGrantOption": [
+                "ALL",
+                "ALTER",
+                "DELETE",
+                "DESCRIBE",
+                "DROP",
+                "INSERT"
+            ],
+            "LastUpdated": "2026-04-06T21:37:45.413000-04:00",
+            "LastUpdatedBy": "arn:aws:iam::519697923626:user/data_engineer"
+        },
+        {
+            "Principal": {
+                "DataLakePrincipalIdentifier": "arn:aws:iam::519697923626:user/data_engineer"
+            },
+            "Resource": {
+                "TableWithColumns": {
+                    "CatalogId": "519697923626",
+                    "DatabaseName": "datagov_processed_db",
+                    "Name": "orders",
+                    "ColumnWildcard": {}
+                }
+            },
+            "Permissions": [
+                "SELECT"
+            ],
+            "PermissionsWithGrantOption": [
+                "SELECT"
+            ],
+            "LastUpdated": "2026-04-06T21:37:45.413000-04:00",
+            "LastUpdatedBy": "arn:aws:iam::519697923626:user/data_engineer"
+        },
+        {
+            "Principal": {
+                "DataLakePrincipalIdentifier": "arn:aws:iam::519697923626:user/data_engineer"
+            },
+            "Resource": {
+                "Table": {
+                    "CatalogId": "519697923626",
+                    "DatabaseName": "datagov_processed_db",
+                    "Name": "payments"
+                }
+            },
+            "Permissions": [
+                "ALL",
+                "ALTER",
+                "DELETE",
+                "DESCRIBE",
+                "DROP",
+                "INSERT"
+            ],
+            "PermissionsWithGrantOption": [
+                "ALL",
+                "ALTER",
+                "DELETE",
+                "DESCRIBE",
+                "DROP",
+                "INSERT"
+            ],
+            "LastUpdated": "2026-04-06T21:37:45.415000-04:00",
+            "LastUpdatedBy": "arn:aws:iam::519697923626:user/data_engineer"
+        },
+        {
+            "Principal": {
+                "DataLakePrincipalIdentifier": "arn:aws:iam::519697923626:user/data_engineer"
+            },
+            "Resource": {
+                "TableWithColumns": {
+                    "CatalogId": "519697923626",
+                    "DatabaseName": "datagov_processed_db",
+                    "Name": "payments",
+                    "ColumnWildcard": {}
+                }
+            },
+            "Permissions": [
+                "SELECT"
+            ],
+            "PermissionsWithGrantOption": [
+                "SELECT"
+            ],
+            "LastUpdated": "2026-04-06T21:37:45.415000-04:00",
+            "LastUpdatedBy": "arn:aws:iam::519697923626:user/data_engineer"
+        },
+        {
+            "Principal": {
+                "DataLakePrincipalIdentifier": "arn:aws:iam::519697923626:user/data_engineer"
+            },
+            "Resource": {
+                "Table": {
+                    "CatalogId": "519697923626",
+                    "DatabaseName": "datagov_processed_db",
+                    "Name": "products"
+                }
+            },
+            "Permissions": [
+                "ALL",
+                "ALTER",
+                "DELETE",
+                "DESCRIBE",
+                "DROP",
+                "INSERT"
+            ],
+            "PermissionsWithGrantOption": [
+                "ALL",
+                "ALTER",
+                "DELETE",
+                "DESCRIBE",
+                "DROP",
+                "INSERT"
+            ],
+            "LastUpdated": "2026-04-06T21:37:45.383000-04:00",
+            "LastUpdatedBy": "arn:aws:iam::519697923626:user/data_engineer"
+        },
+        {
+            "Principal": {
+                "DataLakePrincipalIdentifier": "arn:aws:iam::519697923626:user/data_engineer"
+            },
+            "Resource": {
+                "TableWithColumns": {
+                    "CatalogId": "519697923626",
+                    "DatabaseName": "datagov_processed_db",
+                    "Name": "products",
+                    "ColumnWildcard": {}
+                }
+            },
+            "Permissions": [
+                "SELECT"
+            ],
+            "PermissionsWithGrantOption": [
+                "SELECT"
+            ],
+            "LastUpdated": "2026-04-06T21:37:45.383000-04:00",
+            "LastUpdatedBy": "arn:aws:iam::519697923626:user/data_engineer"
+        },
+        {
+            "Principal": {
+                "DataLakePrincipalIdentifier": "arn:aws:iam::519697923626:user/data_engineer"
+            },
+            "Resource": {
+                "Table": {
+                    "CatalogId": "519697923626",
+                    "DatabaseName": "datagov_processed_db",
+                    "Name": "order_items"
+                }
+            },
+            "Permissions": [
+                "ALL",
+                "ALTER",
+                "DELETE",
+                "DESCRIBE",
+                "DROP",
+                "INSERT"
+            ],
+            "PermissionsWithGrantOption": [
+                "ALL",
+                "ALTER",
+                "DELETE",
+                "DESCRIBE",
+                "DROP",
+                "INSERT"
+            ],
+            "LastUpdated": "2026-04-06T21:37:45.387000-04:00",
+            "LastUpdatedBy": "arn:aws:iam::519697923626:user/data_engineer"
+        },
+        {
+            "Principal": {
+                "DataLakePrincipalIdentifier": "arn:aws:iam::519697923626:user/data_engineer"
+            },
+            "Resource": {
+                "TableWithColumns": {
+                    "CatalogId": "519697923626",
+                    "DatabaseName": "datagov_processed_db",
+                    "Name": "order_items",
+                    "ColumnWildcard": {}
+                }
+            },
+            "Permissions": [
+                "SELECT"
+            ],
+            "PermissionsWithGrantOption": [
+                "SELECT"
+            ],
+            "LastUpdated": "2026-04-06T21:37:45.387000-04:00",
+            "LastUpdatedBy": "arn:aws:iam::519697923626:user/data_engineer"
+        },
+        {
+            "Principal": {
+                "DataLakePrincipalIdentifier": "IAM_ALLOWED_PRINCIPALS"
+            },
+            "Resource": {
+                "Database": {
+                    "CatalogId": "519697923626",
+                    "Name": "datagov_curated_db"
+                }
+            },
+            "Permissions": [
+                "ALL"
+            ],
+            "PermissionsWithGrantOption": []
+        },
+        {
+            "Principal": {
+                "DataLakePrincipalIdentifier": "IAM_ALLOWED_PRINCIPALS"
+            },
+            "Resource": {
+                "Table": {
+                    "CatalogId": "519697923626",
+                    "DatabaseName": "datagov_processed_db",
+                    "Name": "products"
+                }
+            },
+            "Permissions": [
+                "ALL"
+            ],
+            "PermissionsWithGrantOption": []
+        },
+        {
+            "Principal": {
+                "DataLakePrincipalIdentifier": "IAM_ALLOWED_PRINCIPALS"
+            },
+            "Resource": {
+                "Table": {
+                    "CatalogId": "519697923626",
+                    "DatabaseName": "datagov_processed_db",
+                    "Name": "payments"
+                }
+            },
+            "Permissions": [
+                "ALL"
+            ],
+            "PermissionsWithGrantOption": []
+        },
+        {
+            "Principal": {
+                "DataLakePrincipalIdentifier": "IAM_ALLOWED_PRINCIPALS"
+            },
+            "Resource": {
+                "Database": {
+                    "CatalogId": "519697923626",
+                    "Name": "default"
+                }
+            },
+            "Permissions": [
+                "ALL"
+            ],
+            "PermissionsWithGrantOption": []
+        },
+        {
+            "Principal": {
+                "DataLakePrincipalIdentifier": "IAM_ALLOWED_PRINCIPALS"
+            },
+            "Resource": {
+                "Table": {
+                    "CatalogId": "519697923626",
+                    "DatabaseName": "datagov_curated_db",
+                    "Name": "customer_orders_summary"
+                }
+            },
+            "Permissions": [
+                "ALL"
+            ],
+            "PermissionsWithGrantOption": []
+        },
+        {
+            "Principal": {
+                "DataLakePrincipalIdentifier": "IAM_ALLOWED_PRINCIPALS"
+            },
+            "Resource": {
+                "Table": {
+                    "CatalogId": "519697923626",
+                    "DatabaseName": "datagov_processed_db",
+                    "Name": "order_items"
+                }
+            },
+            "Permissions": [
+                "ALL"
+            ],
+            "PermissionsWithGrantOption": []
+        },
+        {
+            "Principal": {
+                "DataLakePrincipalIdentifier": "IAM_ALLOWED_PRINCIPALS"
+            },
+            "Resource": {
+                "Table": {
+                    "CatalogId": "519697923626",
+                    "DatabaseName": "datagov_raw_db",
+                    "Name": "customers"
+                }
+            },
+            "Permissions": [
+                "ALL"
+            ],
+            "PermissionsWithGrantOption": []
+        },
+        {
+            "Principal": {
+                "DataLakePrincipalIdentifier": "IAM_ALLOWED_PRINCIPALS"
+            },
+            "Resource": {
+                "Table": {
+                    "CatalogId": "519697923626",
+                    "DatabaseName": "datagov_curated_db",
+                    "Name": "sales_metrics"
+                }
+            },
+            "Permissions": [
+                "ALL"
+            ],
+            "PermissionsWithGrantOption": []
+        },
+        {
+            "Principal": {
+                "DataLakePrincipalIdentifier": "IAM_ALLOWED_PRINCIPALS"
+            },
+            "Resource": {
+                "Table": {
+                    "CatalogId": "519697923626",
+                    "DatabaseName": "datagov_curated_db",
+                    "Name": "order_details_enriched"
+                }
+            },
+            "Permissions": [
+                "ALL"
+            ],
+            "PermissionsWithGrantOption": []
+        },
+        {
+            "Principal": {
+                "DataLakePrincipalIdentifier": "IAM_ALLOWED_PRINCIPALS"
+            },
+            "Resource": {
+                "Database": {
+                    "CatalogId": "519697923626",
+                    "Name": "datagov_processed_db"
+                }
+            },
+            "Permissions": [
+                "ALL"
+            ],
+            "PermissionsWithGrantOption": []
+        },
+        {
+            "Principal": {
+                "DataLakePrincipalIdentifier": "IAM_ALLOWED_PRINCIPALS"
+            },
+            "Resource": {
+                "Table": {
+                    "CatalogId": "519697923626",
+                    "DatabaseName": "datagov_raw_db",
+                    "Name": "orders"
+                }
+            },
+            "Permissions": [
+                "ALL"
+            ],
+            "PermissionsWithGrantOption": []
+        },
+        {
+            "Principal": {
+                "DataLakePrincipalIdentifier": "IAM_ALLOWED_PRINCIPALS"
+            },
+            "Resource": {
+                "Table": {
+                    "CatalogId": "519697923626",
+                    "DatabaseName": "datagov_processed_db",
+                    "Name": "orders"
+                }
+            },
+            "Permissions": [
+                "ALL"
+            ],
+            "PermissionsWithGrantOption": []
+        },
+        {
+            "Principal": {
+                "DataLakePrincipalIdentifier": "IAM_ALLOWED_PRINCIPALS"
+            },
+            "Resource": {
+                "Table": {
+                    "CatalogId": "519697923626",
+                    "DatabaseName": "datagov_raw_db",
+                    "Name": "products"
+                }
+            },
+            "Permissions": [
+                "ALL"
+            ],
+            "PermissionsWithGrantOption": []
+        },
+        {
+            "Principal": {
+                "DataLakePrincipalIdentifier": "IAM_ALLOWED_PRINCIPALS"
+            },
+            "Resource": {
+                "Table": {
+                    "CatalogId": "519697923626",
+                    "DatabaseName": "datagov_processed_db",
+                    "Name": "customers"
+                }
+            },
+            "Permissions": [
+                "ALL"
+            ],
+            "PermissionsWithGrantOption": []
+        },
+        {
+            "Principal": {
+                "DataLakePrincipalIdentifier": "IAM_ALLOWED_PRINCIPALS"
+            },
+            "Resource": {
+                "Database": {
+                    "CatalogId": "519697923626",
+                    "Name": "datagov_raw_db"
+                }
+            },
+            "Permissions": [
+                "ALL"
+            ],
+            "PermissionsWithGrantOption": []
+        },
+        {
+            "Principal": {
+                "DataLakePrincipalIdentifier": "IAM_ALLOWED_PRINCIPALS"
+            },
+            "Resource": {
+                "Table": {
+                    "CatalogId": "519697923626",
+                    "DatabaseName": "datagov_raw_db",
+                    "Name": "order_items"
+                }
+            },
+            "Permissions": [
+                "ALL"
+            ],
+            "PermissionsWithGrantOption": []
+        },
+        {
+            "Principal": {
+                "DataLakePrincipalIdentifier": "IAM_ALLOWED_PRINCIPALS"
+            },
+            "Resource": {
+                "Table": {
+                    "CatalogId": "519697923626",
+                    "DatabaseName": "datagov_raw_db",
+                    "Name": "payments"
+                }
+            },
+            "Permissions": [
+                "ALL"
+            ],
+            "PermissionsWithGrantOption": []
+        }
+    ],
+    "NextToken": "eyJzaG91bGRRdWVyeUFsbFRhYmxlc1Blcm1pc3Npb25zIjpmYWxzZSwic2hvdWxkUXVlcnlBY2NvdW50UGVybWlzc2lvbnMiOnRydWUsInNob3VsZFF1ZXJ5QWxsSUFNUHJpbmNpcGFsUGVybWlzc2lvbnMiOmZhbHNlLCJzaG91bGRRdWVyeUNyb3NzQWNjb3VudFBlcm1pc3Npb25zRm9yQ2F0YWxvZ1Jlc291cmNlIjpmYWxzZX0="
+}
