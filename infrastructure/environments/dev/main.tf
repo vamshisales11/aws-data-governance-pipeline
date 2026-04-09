@@ -214,3 +214,23 @@ module "glue_jobs_curated" {
     "--curated_bucket" = module.data_lake.curated_bucket_name
   }
 }
+
+
+
+
+module "monitoring" {
+  source = "../../modules/monitoring"
+
+  project_name = var.project_name
+  environment  = var.environment
+
+  glue_job_names = [
+    "customers-etl",
+    "orders-etl",
+    "order-items-etl",
+    "payments-etl",
+    "products-etl"
+  ]
+
+  alert_email = "vamshisales11@gmail.com"
+}
