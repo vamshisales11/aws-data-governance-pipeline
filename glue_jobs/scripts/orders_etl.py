@@ -52,6 +52,8 @@ df = df.filter(
 # Remove duplicates
 df = df.dropDuplicates(["order_id"])
 
+##raise Exception("FORCED FAILURE FOR TESTING")
+
 #############################################
 # 5. Timestamp Handling
 #############################################

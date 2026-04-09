@@ -131,3 +131,43 @@ resource "aws_s3_bucket_policy" "secure_transport" {
     ]
   })
 }
+
+
+
+
+##############################################
+# ATHENA QUERY RESULTS BUCKET
+##############################################
+
+resource "aws_s3_bucket" "athena_results" {
+  bucket = "${var.project_name}-athena-results-${var.environment}"
+
+  tags = merge(
+    var.common_tags,
+    {
+      Purpose = "athena-query-results"
+    }
+  )
+}
+
+# Encryption
+resource "aws_s3_bucket_server_side_encryption_configuration" "athena_encryption" {
+  bucket = aws_s3_bucket.athena_results.id
+
+  rule {
+    apply_server_side_encryption_by_default {
+      kms_master_key_id = var.kms_key_arn
+      sse_algorithm     = "aws:kms"
+    }
+  }
+}
+
+# Block public access
+resource "aws_s3_bucket_public_access_block" "athena_block_public" {
+  bucket = aws_s3_bucket.athena_results.id
+
+  block_public_acls       = true
+  block_public_policy     = true
+  ignore_public_acls      = true
+  restrict_public_buckets = true
+}

@@ -32,3 +32,8 @@ output "curated_bucket_name" {
   description = "Curated bucket name"
   value       = aws_s3_bucket.data_lake["curated"].bucket
 }
+
+
+output "athena_results_bucket" {
+  value = aws_s3_bucket.athena_results.bucket
+}

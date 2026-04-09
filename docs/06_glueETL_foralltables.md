@@ -1,4 +1,4 @@
-# AWS Data Governance Data Pipeline
+
 
 ## ETL Stage Documentation (Processed Layer Implementation)
 

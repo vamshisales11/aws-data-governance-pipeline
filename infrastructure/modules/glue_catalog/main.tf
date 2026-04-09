@@ -340,3 +340,21 @@ resource "aws_glue_catalog_table" "curated_tables" {
     }
   }
 }
+
+
+
+
+#############################################
+# ATHENA GOVERNANCE REPORTING DATABASE
+#############################################
+
+resource "aws_glue_catalog_database" "reporting" {
+  name = "${var.project_name}_reporting_db"
+
+  description = "Governance reporting database for Athena queries"
+
+  tags = merge(var.common_tags, {
+    Layer = "reporting"
+    Purpose = "governance-reporting"
+  })
+}

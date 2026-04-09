@@ -31,6 +31,7 @@ resource "aws_glue_job" "this" {
     "--enable-glue-datacatalog" = "true"
     "--enable-continuous-cloudwatch-log" = "true"
     "--enable-metrics" = "true"
+    "--enable-observability-metrics"        = "true"
 
     "--raw_bucket"       = var.raw_bucket
     "--processed_bucket" = var.processed_bucket
