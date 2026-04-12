@@ -71,4 +71,8 @@ Thumbs.db
 Dockerfile.*
 .dockerignore
 
+
+*.zip
+
 EOF
+
