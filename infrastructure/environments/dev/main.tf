@@ -234,3 +234,37 @@ module "monitoring" {
 
   alert_email = "vamshisales11@gmail.com"
 }
+
+
+
+
+
+
+module "step_function" {
+  source = "../../modules/step_functions"
+
+  project_name = var.project_name
+  environment  = var.environment
+
+  customers_job_name   = "datagov-dev-customers-etl"
+  products_job_name    = "datagov-dev-products-etl"
+  orders_job_name      = "datagov-dev-orders-etl"
+  order_items_job_name = "datagov-dev-order-items-etl"
+  payments_job_name    = "datagov-dev-payments-etl"
+}
+
+
+
+
+
+module "lambda_trigger" {
+  source = "../../modules/lambda_trigger"
+
+  project_name = var.project_name
+  environment  = var.environment
+
+  step_function_arn = module.step_function.step_function_arn
+  lambda_zip_path   = "../../../glue_jobs/lambda/function.zip"
+
+  raw_bucket_name = module.data_lake.raw_bucket_name
+}
